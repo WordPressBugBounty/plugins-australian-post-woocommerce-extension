@@ -266,7 +266,7 @@ class WC_Australian_Post_Shipping_Method extends WC_Shipping_Method
                 // add the rate if the API request succeeded
 
                 $rates[$service_key] = array(
-                        'id' => $service_key,
+                        'id' => $this->id . '_' . $service_key,
                         'label' => $this->title. ' ' . $aus_response->postage_result->service.' ' . $duration,
                         'cost' =>  ($aus_response->postage_result->total_cost ) + $old_rate,
 
