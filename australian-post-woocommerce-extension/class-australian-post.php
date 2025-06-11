@@ -31,6 +31,8 @@ class WC_Australian_Post_Shipping_Method extends WC_Shipping_Method
     private $debug_mode;
 	private $enable_stripping_tax;
 
+    private $enabled_services;
+
 	public function __construct( $instance_id = 0 )
     {
 		$this->id = 'auspost';

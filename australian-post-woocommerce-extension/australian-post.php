@@ -3,9 +3,9 @@
  * Plugin Name:       Australia Post WooCommerce Extension
  * Plugin URI:        https://wpruby.com/plugin/australia-post-woocommerce-extension-pro?utm_source=aupost-lite&utm_medium=pluginuri&utm_campaign=freetopro
  * Description:       WooCommerce Australia Post Shipping Method.
- * Version:           1.10.10
+ * Version:           1.10.11
  * WC requires at least: 3.0
- * WC tested up to: 9.4
+ * WC tested up to: 9.9
  * Author:            WPRuby
  * Author URI:        https://wpruby.com
  * Text Domain:       australian-post
@@ -32,7 +32,8 @@ require_once( dirname( __FILE__ ) . '/includes/autoload.php' );
  */
 class WPRuby_Australia_Post_Lite{
 
-	public function __construct(){
+	public function __construct()
+    {
 		//info: if the Pro version active, deactivate it first.
 		if ($this->is_plugin_active('woocommerce-australia-post-extension-pro/class-australian-post.php')) {
 				add_action('admin_init', array($this, 'deactivate_pro_version'));
@@ -45,8 +46,16 @@ class WPRuby_Australia_Post_Lite{
 		}
 
 		add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), array($this, 'plugin_action_links') );
+        add_filter('woocommerce_shipping_auspost_option', [$this, 'override_tax_status_option'], 10, 3);
 
 	}
+
+    public function override_tax_status_option($value, $option_key, $instance) {
+        if ($option_key === 'tax_status') {
+            return 'taxable';
+        }
+        return $value;
+    }
 
 	// deactivate the pro version
 	public function deactivate_pro_version() {

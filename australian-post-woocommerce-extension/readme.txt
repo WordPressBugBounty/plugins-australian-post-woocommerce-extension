@@ -3,8 +3,8 @@ Contributors: wprubyplugins, waseem_senjer
 Donate link: https://wpruby.com/plugin/australia-post-woocommerce-extension-pro?utm_source=aupost-lite&utm_medium=donatelink&utm_campaign=freetopro
 Tags: woocommerce,shipping,shipping method, woocommerce extension, australia post
 Requires at least: 4.0.0
-Tested up to: 6.7
-Stable tag: 1.10.10
+Tested up to: 6.8
+Stable tag: 1.10.11
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -162,6 +162,11 @@ This is a key that you must get it from Australia Post so you can use their API,
 
 
 == Changelog ==
+
+= 1.10.11 (11.06.2025) =
+* Add enabled_services property to Australian Post class.
+* Override tax status to calculate shipping taxes correctly.
+
 = 1.10.10 (12.03.2025) =
 * Requires PHP 7.4 or higher.
 * Fixed: fixed boxes iterations for more accurate calculations for large items.
