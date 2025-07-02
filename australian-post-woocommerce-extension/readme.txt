@@ -4,7 +4,7 @@ Donate link: https://wpruby.com/plugin/australia-post-woocommerce-extension-pro?
 Tags: woocommerce,shipping,shipping method, woocommerce extension, australia post
 Requires at least: 4.0.0
 Tested up to: 6.8
-Stable tag: 1.10.11
+Stable tag: 1.10.12
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -162,6 +162,8 @@ This is a key that you must get it from Australia Post so you can use their API,
 
 
 == Changelog ==
+= 1.10.12 (02.07.2025) =
+* remove unused widget include from admin options
 
 = 1.10.11 (11.06.2025) =
 * Add enabled_services property to Australian Post class.

@@ -46,8 +46,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <?php include AUSPOST_LITE_DIR. 'views/labelpass-widget.php'; ?>
                     <div class="postbox ">
                         <h3 class="hndle"><span><i class="fa fa-question-circle"></i>&nbsp;&nbsp;Plugin Support</span></h3>
                         <hr>
