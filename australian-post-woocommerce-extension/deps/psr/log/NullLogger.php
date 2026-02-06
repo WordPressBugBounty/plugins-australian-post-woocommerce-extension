@@ -9,7 +9,6 @@ namespace WPRubyAustraliaPost\Deps\Psr\Log;
  * library creating a NullLogger instance to have something to throw logs at
  * is a good way to avoid littering your code with `if ($this->logger) { }`
  * blocks.
- * @internal
  */
 class NullLogger extends AbstractLogger
 {

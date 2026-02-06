@@ -15,7 +15,6 @@ use WPRubyAustraliaPost\Deps\Psr\Log\NullLogger;
  * Actual packer.
  *
  * @author Doug Wright
- * @internal
  */
 class Packer implements LoggerAwareInterface
 {

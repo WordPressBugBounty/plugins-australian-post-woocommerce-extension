@@ -13,7 +13,6 @@ namespace WPRubyAustraliaPost\Deps\DVDoug\BoxPacker;
  *
  * @deprecated use ConstrainedPlacementItem instead which has additional flexibility
  * @author Doug Wright
- * @internal
  */
 interface ConstrainedItem extends Item
 {

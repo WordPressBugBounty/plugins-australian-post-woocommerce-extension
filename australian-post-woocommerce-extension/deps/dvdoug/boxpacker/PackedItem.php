@@ -11,7 +11,6 @@ namespace WPRubyAustraliaPost\Deps\DVDoug\BoxPacker;
  * A packed item.
  *
  * @author Doug Wright
- * @internal
  */
 class PackedItem
 {

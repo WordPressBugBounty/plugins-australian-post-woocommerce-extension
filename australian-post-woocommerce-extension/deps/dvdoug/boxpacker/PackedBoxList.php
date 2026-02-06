@@ -11,7 +11,6 @@ namespace WPRubyAustraliaPost\Deps\DVDoug\BoxPacker;
  * List of packed boxes.
  *
  * @author Doug Wright
- * @internal
  */
 class PackedBoxList extends \SplMinHeap
 {

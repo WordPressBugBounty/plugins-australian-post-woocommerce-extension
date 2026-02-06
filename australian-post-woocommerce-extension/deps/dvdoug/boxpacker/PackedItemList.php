@@ -11,7 +11,6 @@ namespace WPRubyAustraliaPost\Deps\DVDoug\BoxPacker;
  * List of packed items, ordered by volume.
  *
  * @author Doug Wright
- * @internal
  */
 class PackedItemList extends \SplMaxHeap
 {

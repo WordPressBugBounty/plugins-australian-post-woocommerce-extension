@@ -12,7 +12,6 @@ namespace WPRubyAustraliaPost\Deps\DVDoug\BoxPacker;
  * need this additional functionality as it will slow down the packing algorithm.
  *
  * @author Doug Wright
- * @internal
  */
 interface ConstrainedPlacementItem extends Item
 {

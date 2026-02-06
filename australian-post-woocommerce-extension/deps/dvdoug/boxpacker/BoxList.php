@@ -11,7 +11,6 @@ namespace WPRubyAustraliaPost\Deps\DVDoug\BoxPacker;
  * List of boxes available to put items into, ordered by volume.
  *
  * @author Doug Wright
- * @internal
  */
 class BoxList extends \SplMinHeap
 {

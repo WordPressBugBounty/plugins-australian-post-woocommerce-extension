@@ -10,7 +10,6 @@ use WPRubyAustraliaPost\Deps\PHPUnit\Framework\TestCase;
  *
  * Implementors can extend the class and implement abstract methods to run this
  * as part of their test suite.
- * @internal
  */
 abstract class LoggerInterfaceTest extends TestCase
 {

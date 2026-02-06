@@ -14,7 +14,6 @@ use WPRubyAustraliaPost\Deps\Psr\Log\NullLogger;
  * Actual packer.
  *
  * @author Doug Wright
- * @internal
  */
 class VolumePacker implements LoggerAwareInterface
 {

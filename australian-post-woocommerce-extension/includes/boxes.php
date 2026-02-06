@@ -224,11 +224,11 @@ return [
     [
         "name" => "Box #20",
         "outer_length" => 1050,
-        "outer_width" => 550,
-        "outer_height" => 550,
+        "outer_width" => 480,
+        "outer_height" => 480,
         "inner_length" => 1040,
-        "inner_width" => 540,
-        "inner_height" => 540,
+        "inner_width" => 470,
+        "inner_height" => 470,
         "empty_weight" => 0,
         "max_weight" => 22000
     ],

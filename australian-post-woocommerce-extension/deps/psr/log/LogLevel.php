@@ -4,7 +4,6 @@ namespace WPRubyAustraliaPost\Deps\Psr\Log;
 
 /**
  * Describes log levels.
- * @internal
  */
 class LogLevel
 {

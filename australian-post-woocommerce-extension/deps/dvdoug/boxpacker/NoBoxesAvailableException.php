@@ -11,7 +11,6 @@ use RuntimeException;
 /**
  * Class NoBoxesAvailableException
  * Exception used when an item cannot be packed into any box.
- * @internal
  */
 class NoBoxesAvailableException extends RuntimeException
 {

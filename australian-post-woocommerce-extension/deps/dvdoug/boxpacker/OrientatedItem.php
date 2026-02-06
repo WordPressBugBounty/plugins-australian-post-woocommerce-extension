@@ -12,7 +12,6 @@ use JsonSerializable;
  * An item to be packed.
  *
  * @author Doug Wright
- * @internal
  */
 class OrientatedItem implements JsonSerializable
 {

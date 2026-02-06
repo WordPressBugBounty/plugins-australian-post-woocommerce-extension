@@ -3,9 +3,9 @@
  * Plugin Name:       Australia Post WooCommerce Extension
  * Plugin URI:        https://wpruby.com/plugin/australia-post-woocommerce-extension-pro?utm_source=aupost-lite&utm_medium=pluginuri&utm_campaign=freetopro
  * Description:       WooCommerce Australia Post Shipping Method.
- * Version:           1.10.12
+ * Version:           1.10.14
  * WC requires at least: 3.0
- * WC tested up to: 9.9
+ * WC tested up to: 10.3
  * Author:            WPRuby
  * Author URI:        https://wpruby.com
  * Text Domain:       australian-post
@@ -22,8 +22,6 @@ define('AUSPOST_LITE_URL', plugin_dir_url(__FILE__));
 define('AUSPOST_LITE_DIR', plugin_dir_path(__FILE__));
 
 require_once( dirname( __FILE__ ) . '/includes/autoload.php' );
-
-
 
 /**
  *
@@ -47,7 +45,7 @@ class WPRuby_Australia_Post_Lite{
 
 		add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), array($this, 'plugin_action_links') );
         add_filter('woocommerce_shipping_auspost_option', [$this, 'override_tax_status_option'], 10, 3);
-
+        add_action('wp_ajax_dismiss_rulehook_promo',  [$this, 'dismiss_rulehook_promo']);
 	}
 
     public function override_tax_status_option($value, $option_key, $instance) {
@@ -84,6 +82,21 @@ class WPRuby_Australia_Post_Lite{
 	   $links[] = '<a href="https://wpruby.com/submit-ticket/" target="_blank">Support</a>';
 	   return $links;
 	}
+
+
+    /**
+     * Handle the AJAX request to dismiss the RuleHook promo
+     */
+    public function dismiss_rulehook_promo() {
+        check_ajax_referer('rulehook_dismiss_nonce', 'security');
+
+        if (current_user_can('manage_options')) {
+            // Store the current timestamp as the dismissed time
+            update_user_meta(get_current_user_id(), 'rulehook_promo_dismissed', time());
+        }
+
+        wp_die();
+    }
 
 }
 

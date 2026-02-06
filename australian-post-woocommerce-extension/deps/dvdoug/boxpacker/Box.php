@@ -11,7 +11,6 @@ namespace WPRubyAustraliaPost\Deps\DVDoug\BoxPacker;
  * A "box" (or envelope?) to pack items into.
  *
  * @author Doug Wright
- * @internal
  */
 interface Box
 {

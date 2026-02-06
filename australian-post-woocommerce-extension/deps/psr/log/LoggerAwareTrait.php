@@ -4,7 +4,6 @@ namespace WPRubyAustraliaPost\Deps\Psr\Log;
 
 /**
  * Basic Implementation of LoggerAwareInterface.
- * @internal
  */
 trait LoggerAwareTrait
 {
