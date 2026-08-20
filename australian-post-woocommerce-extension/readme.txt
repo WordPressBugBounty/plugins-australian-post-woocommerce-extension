@@ -3,8 +3,8 @@ Contributors: wprubyplugins, waseem_senjer
 Donate link: https://wpruby.com/plugin/australia-post-woocommerce-extension-pro?utm_source=aupost-lite&utm_medium=donatelink&utm_campaign=freetopro
 Tags: woocommerce,shipping,shipping method, woocommerce extension, australia post
 Requires at least: 4.0.0
-Tested up to: 6.9
-Stable tag: 1.10.14
+Tested up to: 7.1
+Stable tag: 1.10.15
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -162,6 +162,10 @@ This is a key that you must get it from Australia Post so you can use their API,
 
 
 == Changelog ==
+
+= 1.10.15 (20.08.2026) =
+* Added: WordPress 7.1 compatibility.
+* Added: WooCommerce 11.0 compatibility.
 
 = 1.10.14 (08.12.2025) =
 * Added: WordPress 6.9 compatibility.
